@@ -47,8 +47,6 @@ Plug 'junegunn/vim-peekaboo'
 
 Plug 'antoinemadec/FixCursorHold.nvim'
 
-Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
-
 call plug#end()
 
 
@@ -253,9 +251,9 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 " Used for the FixCursorHold plugin
 " https://github.com/antoinemadec/FixCursorHold.nvim
 " https://github.com/neovim/neovim/issues/12587
-let g:cursorhold_updatetime = 500
+let g:cursorhold_updatetime = 200
 
-hi CocHighlightText ctermfg=231 guifg=#ffffff ctermbg=60 guibg=#df5f87
+hi CocHighlightText ctermbg=60 guibg=#333333
 
 
 "***************************
